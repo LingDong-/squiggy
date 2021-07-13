@@ -232,3 +232,10 @@ let polygons = polygons.map(
     {type:'approx',epsilon:1.0},
   ]));
 ```
+
+## Write-ups
+
+You can read about the interesting algorithms used in the library:
+
+- [Polygon Self-Intersection Removal](https://quadst.rip/poly-isect.html)
+- [Nuances of Hose Making](https://quadst.rip/hose.html)
