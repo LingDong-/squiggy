@@ -1,0 +1,14 @@
+{
+  "name": "squiggy",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:lib": "tsup src/squiggy.ts --minify --format iife --global-name squiggy && (cat dist/squiggy.global.js ; echo \";(typeof module == 'object')?(module.exports=squiggy):0;\") > dist/squiggy.js && rm dist/squiggy.global.js; cp dist/squiggy.js app/squiggy.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tsup": "^4.11.2"
+  }
+}
