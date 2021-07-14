@@ -35,7 +35,7 @@ let polygons = my_brush(
   [[107,49],[107,51],[105,54],[102,59],[99,63],[95,70],[90,80]],
   {
     preprocess:[
-      {type:'catmul-rom'},
+      {type:'catmull-rom'},
       {type:'resample',step:6}
     ],
     clean:true,
@@ -168,7 +168,7 @@ let processed = squiggy.preprocess(
   [99,63,6],[95,70,7],[90,80,6]],
   [
     {type:'gauss-blur',axis:2,k:6}, // 2k+1 is kernel size
-    {type:'catmul-rom',alpha:0.5,resolution:20},
+    {type:'catmull-rom',alpha:0.5,resolution:20},
     {type:'resample',step:6}, // step is length of each segment
   ]);
 ```
